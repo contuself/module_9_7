@@ -5,8 +5,10 @@ def is_prime(func):
             return 'Не простое и не составное'
         for i in range(2, result_1):
             if result_1 % i == 0:
-                return 'Составное'
-        return 'Простое'
+                print('Составное')
+                return result_1
+        print('Простое')
+        return result_1
     return wrapper
 
 @is_prime
